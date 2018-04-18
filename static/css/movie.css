@@ -1,0 +1,95 @@
+.navbar{
+  background-color: rgb(71,70,74);
+}
+.navtype{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  margin-left: 35%;
+}
+.navtype i{
+  position: absolute;
+  right: 59.5%;
+  top: 75%;
+  color: #ffffff;
+}
+.movietype{
+  width:80%;
+  border:1px solid rgb(215,215,215);;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 25px;
+  margin-top: 40px;
+}
+.mainmenu{
+  display: inline-block;
+}
+.movietype-list{
+  border-bottom: 1px solid  rgb(215,215,215);
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.mainmenuu-list{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  float: right;
+  height: 30px;
+  line-height: 30px;;
+}
+.mainmenu span{
+  height: 30px;
+  line-height: 30px;
+  color: rgb(71,70,74);
+}
+.alltotal{
+  background-color: rgb(243,77,65);
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 40%;
+  color: #ffffff;
+}
+.list-second{
+  margin-top: 5px;
+  width: 28%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5.7%;
+}
+.btnradio{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+}
+.el-radio__inner{
+  width:18px!important;
+  height:18px!important;
+}
+.el-radio__label{
+  font-size: 16px!important;
+}
+.movielist{
+  margin-top: 40px;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.el-pagination.is-background .el-pager li.active{
+  background-color: rgb(243,77,65)!important;
+}
+.page{
+  margin: 60px;;
+}
+.el-pagination{
+  text-align: center;
+}

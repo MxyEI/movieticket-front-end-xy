@@ -16,13 +16,13 @@ spinner.start()
 
 rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
   if (err) throw err
-  webpack(webpackConfig, (err, stats) => {
+  webpack(webpackConfig, function (err, stats) {
     spinner.stop()
     if (err) throw err
     process.stdout.write(stats.toString({
       colors: true,
       modules: false,
-      children: false, // if you are using ts-loader, setting this to true will make tyescript errors show up during build
+      children: false,
       chunks: false,
       chunkModules: false
     }) + '\n\n')
@@ -37,16 +37,5 @@ rm(path.join(config.build.assetsRoot, config.build.assetsSubDirectory), err => {
       '  Tip: built files are meant to be served over an HTTP server.\n' +
       '  Opening index.html over file:// won\'t work.\n'
     ))
-
-
-    if(process.env.npm_config_preview){
-      server.start({
-        port: 9526,
-        directory: './dist',
-        file: '/index.html'
-      });
-      console.log('> Listening at ' +  'http://localhost:9526' + '\n')
-    }
-
   })
 })

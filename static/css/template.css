@@ -1,0 +1,101 @@
+.mainbgimg{
+  width:100%;
+  height: 450px;;
+  background-image: url("../img/home.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h3{
+  color: red;
+}
+.file-box{
+  width:100%;
+  padding-left: 140px;
+  padding-right: 140px;
+}
+.filebox-left{
+  margin-top: 100px;
+  width: 60%;
+  display: inline-block;
+  height: 700px;;
+}
+.filebox-left-top,.filebox-left-bottom{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+.filebox-text img{
+  width: 160px;
+  height:220px;;
+}
+.filebox-text{
+  height: 260px;;
+  width: 160px;;
+  border:1px solid rgb(215,215,215);
+  display: inline-block;
+  cursor: pointer;
+}
+.filebox-text p{
+  margin:0;
+  width: 160px;;
+  height: 40px;;
+  line-height: 40px;
+  color: red;
+  text-align: center;
+}
+.filebox-text p:hover
+{
+  background-color:rgb(239,66,56);
+  color: #ffffff;
+}
+.filebox-right{
+  margin-top: 100px;
+  width: 35%;
+  float: right;
+  margin-left: 50px;
+}
+.filebox-right p,.right-top-one{
+  display: inline-block;
+}
+.right-top-one{
+  width: 80px;;
+  margin-left: 180px;
+  height: 80px;
+  line-height: 40px;
+}
+.filebox-right-top{
+  margin-top: 40px;
+  width: 75%;
+  border:1px solid rgb(215,215,215);;
+}
+.filebox-right-bgimg{
+  display: inline-block;
+  width: 150px;
+  height: 80px;;;
+  background-image: url("../img/top.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.filebox-right p{
+  margin:0;
+}
+h6{
+  float: right;
+  font-size: 18px;
+  height: 50px;
+  margin: 0;
+  line-height: 50px;
+}
+.right-list{
+  width: 75%;
+  clear: both;
+}
+.right-list i{
+  font-size: 22px;
+}
+.right-list p{
+  margin-left: 15px;
+  font-size: 18px;
+  height: 50px;
+  line-height: 50px;
+}
