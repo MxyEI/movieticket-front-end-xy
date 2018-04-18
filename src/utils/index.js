@@ -1,8 +1,8 @@
 /**
- * Created by admin on 2017/5/19.
+ * Created by admin on 2018/3/19.
  */
 /**
- * Created by jiachenpan on 16/11/18.
+ * Created by mxy on 18/3/20.
  */
 
 export function parseTime(time, cFormat) {

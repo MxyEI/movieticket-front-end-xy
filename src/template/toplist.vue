@@ -13,7 +13,7 @@
       <div class="content-box">
         <div class="notice">
           <p class="notice-date">2018-04-17<span>已更新</span></p>
-          <p>榜单规则：将昨日国内热映的影片，按照评分从高到低排列取前10名，每天上午10点更新。相关数据来源于“猫眼专业版”及“猫眼电影库”。</p>
+          <p>榜单规则：将昨日国内热映的影片，按照评分从高到低排列取前10名，每天上午10点更新。</p>
         </div>
         <div class="content-box-item">
           <div class="box-item-list">

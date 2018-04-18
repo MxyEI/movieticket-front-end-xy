@@ -8,11 +8,11 @@
  前端使用vue框架，vue全家桶+webpack 使用ES6规范；具有查看影讯、选座、在线支付等功能，模仿猫眼电影网页端，注释要详细，带设计文档；
 
  后端使用springboot+mybatis+mysql+swagger；注释要详细，带设计文档；
- 
+
  后端管理系统功能：添加影院、影厅、电影详情、电影图片，带echarts图表显示销售详情、流量高峰等信息。用layui-admin也可以（有正版）注释要详细，带设计文档；
- 
+
  整体需求：前后端分离、交互只用json；后端管理系统也是单独分离的系统；
- 
+
  后端项目地址：https://github.com/MxyEI/movieticket-back-end-xy
  前端项目地址：https://github.com/MxyEI/movieticket-front-end-xy
  后台管理系统项目地址：https://github.com/MxyEI/movieticket-management-xy
@@ -68,7 +68,7 @@ if(process.env.npm_config_preview){
                      directory: './dist',
                      file: '/index.html'
                    });
-                   console.log('> Listening at ' +  'http://localhost:9526' + '\n')
+                   console.log('> Listening at ' +  'http://localhost:8080' + '\n')
                  }
 ```
 

@@ -1,8 +1,8 @@
 {
-  "name": "y",
+  "name": "movieticket-front-end-xy",
   "version": "1.0.0",
-  "description": "y",
-  "author": "y",
+  "description": "电影售票系统前端",
+  "author": "mxy",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
