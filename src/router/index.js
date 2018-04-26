@@ -5,6 +5,7 @@ import home from '../template/home.vue'
 import movie from '../template/movie.vue'
 import detail from '../template/detail.vue'
 import toplist from '../template/toplist.vue'
+import xseat from '../template/xseats.vue'
 
 
 Vue.use(Router)
@@ -31,6 +32,10 @@ export default new Router({
           path: '/toplist',
           component:toplist
         },
+        {
+          path:'/xseat',
+          component:xseat
+        }
       ]
     },
   ]

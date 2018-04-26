@@ -7,6 +7,7 @@
             <li class="active" @click="home">首页</li>
             <li @click="movie">电影</li>
             <li @click="toplist">榜单</li>
+            <li @click="xseat">选座</li>
           </ul>
         </div>
         <div class="search">
@@ -40,6 +41,9 @@
       },
       toplist(){
         this.$router.push('/toplist')
+      },
+      xseat(){
+        this.$router.push('/xseat')
       }
     }
   }
