@@ -1,0 +1,31 @@
+extends ../layout
+
+block links
+  link(rel="stylesheet" href="/styles/booking_ticket.css")
+
+block content
+  include head_bar.jade
+
+  div#booking_hint
+    img(src="/static/pictures/assets/getTicket_img_cellphone.png")
+  div#input_hint
+  div#booking_ticket_container
+    table#booking_info_container
+      tr
+        td
+          div#movie_info_poster
+            img#movie_info_poster_img(src='')
+        td
+          div#movie_info_time
+            div#movie_info_date
+            div#movie_info_show_time
+        td
+          div#movie_info_loc
+            div#movie_info_cinema
+            div#movie_info_cinema_hall
+            div#movie_info_seats
+    div#phone_check_container
+
+block scripts
+  script(type="text/javascript" src="/scripts/booking_ticket.js")
+  script(type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js")

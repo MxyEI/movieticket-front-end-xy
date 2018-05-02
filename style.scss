@@ -1,0 +1,54 @@
+// 此文件用于定义一些全局常用的类名以及一些全局变量
+
+/*写好一些常用的类名，以后可以直接类名加数字来用，注意范围
+fs-         :font-size 10-50px
+w-          :width 0-200px
+h-          :height 0-200px
+text-bold   :font-weight bold
+float-right :float:right
+float-left  :float:left
+color-white :color:#FFFFFF
+color-black :color:#000000
+以后添加新的类名时，记得在上面做好注释*/
+
+// font-size helpers
+@for $i from 10 through 50 {
+  .fs-#{$i} {
+      font-size: #{$i + 'px'} !important;
+  }
+}
+
+// width helpers
+@for $i from 0 through 200 {
+  .w-#{$i} {
+      width: #{$i + 'px'} !important;
+  }
+}
+
+// height helpers
+@for $i from 0 through 200 {
+  .h-#{$i} {
+      height: #{$i + 'px'} !important;
+  }
+}
+
+// text-bold helpers
+.text-bold {
+font-weight: bold !important;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.float-left {
+  float: left !important;
+}
+
+.color-white {
+  color: #FFFFFF;
+}
+
+.color-black {
+  color: #000000;
+}

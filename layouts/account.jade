@@ -1,0 +1,16 @@
+extends ../layout
+
+block links
+  link(rel="stylesheet" href="/styles/account.css")
+
+block content
+  include head_bar.jade
+  div#account_container
+    div#user_phone
+    img#account_no_record(src='/static/pictures/assets/Account_noRecord_img.png')
+  
+  table.table#table_
+
+block scripts
+  script(type="text/javascript" src="/scripts/account.js")
+  script(type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js")
