@@ -1,0 +1,1 @@
+window.global_url = 'http://localhost:8000';
