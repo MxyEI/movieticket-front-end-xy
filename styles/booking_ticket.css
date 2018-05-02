@@ -1,0 +1,149 @@
+#booking_hint{
+  width: 321px;
+  height: 156px;
+  margin: 0px auto;
+}
+
+#booking_ticket_container {
+  width : 800px;
+  margin: 0 auto;
+}
+
+#booking_info_container {
+  background-color: #FAFAFA;
+  float: left;
+}
+
+#movie_info_poster {
+  margin: 8px 4px 8px 8px;
+}
+
+#movie_info_poster img {
+  width: 80px;
+  height: 112px;
+  border-radius: 2px;
+}
+
+#movie_info_text {
+  position: relative;
+  left: 112px;
+}
+
+#movie_info_time {
+  margin: 8px 4px 8px 4px;
+  padding: 16px;
+}
+
+#movie_info_date {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #484848;
+}
+
+#movie_info_show_time {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 20px;
+  color: #484848;
+  margin-top: 8px;
+}
+
+#movie_info_loc {
+  margin: 0px 4px 0px 4px;
+  padding: 16px;
+}
+
+#movie_info_cinema {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #484848;
+  top: 8px;
+}
+
+#movie_info_cinema_hall {
+  font-family: PingFangSC-Regular;
+  font-size: 16px;
+  color: #484848;
+  margin-top: 8px;
+}
+
+#movie_info_seats {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #484848;
+  margin-top: 16px;
+}
+
+#phone_check_container {
+  padding-left: 50px;
+  padding-top: 10px;
+  float: left;
+}
+
+.nonclick_btn {
+  background: #DF9088;
+  border-style: none;
+  border-radius: 2px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.click_btn {
+  background: #E84A3A;
+  border-style: none;
+  border-radius: 2px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+#phone_check_btn {
+  width: 240px;
+  height: 48px;
+  margin-top: 24px;
+}
+
+#input_hint {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #E84A3A;
+  width: 230px;
+  height: 20px; 
+  text-align: center;
+  margin-left: 800px;
+  margin-bottom: 8px;
+}
+
+#ticket_key_hint {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999999;
+  padding-top: 20px;
+}
+
+#ticket_key{
+  font-family: Avenir-Book;
+  font-size: 24px;
+  color: #E84A3A;
+  letter-spacing: 1.2px;
+  padding-top: 10px;
+}
+
+#phone_container div {
+  display: inline;
+}
+
+#phone_hint {
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #999999;
+}
+
+#phone_num {
+  font-family: Avenir-Book;
+  font-size: 24px;
+  color: rgba(0,0,0,0.87);
+  padding-left: 15px;
+}
