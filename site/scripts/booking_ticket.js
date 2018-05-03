@@ -7685,7 +7685,7 @@ $(document).ready(function () {
   }
 
   function check_input_valid(input) {
-    var re = /(13|14|15|18)[0-9]{8}/;
+    var re = /(13|14|15|17|18)[0-9]{8}/;
     return re.test(input);
   }
 
