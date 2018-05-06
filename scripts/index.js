@@ -89,7 +89,7 @@ function slick_temp(i) {
             "<div id=\"on_show_poster_hint_score"+i+"\" class=\"on_show_movie_score\">"+"</div>"+
           "</div>"+
           "<div class=\"on_show_hover_fore\"></div>"+
-          "<img id=\"on_show_img"+i+"\" data-lazy=\"\" ult=\"123\" >"+
+          "<img id=\"on_show_img"+i+"\" data-lazy=\"\" alt=\"缩略图\" >"+
           "<div id=\"on_show_hover_info"+i+"\" class=\"on_show_hover_info\">"+
             "<div class=\"on_show_hover_title\"></div>"+
             "<div class=\"on_show_hover_rating\"></div>"+
