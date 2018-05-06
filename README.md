@@ -1,5 +1,5 @@
 # movieticket-front-end-xy
-电影购票系统的前端代码。  
+  
 
 该项目包使用gulp进行自动化构建。   
 
@@ -17,7 +17,7 @@
 > 我设置了自动刷新功能，更改代码保存之后页面就会自动刷新了，方便开发。若出现未自动刷新的情况，可手动刷新。若是向项目中添加了新文件或对文件重命名等非更改代码操作，需要重新执行 gulp clean 和 gulp 指令。   
 
 > 构建 docker 镜像：   
-> docker build -t proxy-server .
+> docker build -t movieticket-front-end-xy .
 
 ## 目录结构
  -  layouts/：各页面内容部分，放置各.jade文件   
