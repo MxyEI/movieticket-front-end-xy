@@ -285,6 +285,12 @@ $(document).ready(function() {
 
   // 将当日所有排期各信息呈现在页面上
   async function show_all_day_times(recent) {
+    //console.log(recent.data.length);
+    //如果无档期，则返回到主页以免出现变量recent.data[select_date_initial_count - 1].cinemaId为空的错误
+    if(recent.data.length==0){
+      alert("此电影最近无档期！即将返回主页...");
+      window.location = `../index.html`;
+    }
     // 初始化一些变量
     let select_cinema_count = recent.data[select_date_initial_count - 1].cinemaId.length,
       cinemaHallId = '',
