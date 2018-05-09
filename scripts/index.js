@@ -165,7 +165,7 @@ function slick_temp(i) {
             "<div id=\"coming_soon_poster_hint_name"+i+"\" class=\"coming_soon_movie_name\">"+"</div>"+
           "</div>"+
           "<div class=\"coming_soon_hover_fore\"></div>"+
-          "<img id=\"coming_soon_img"+i+"\" data-lazy=\"\" ult=\"123\" >"+
+          "<img id=\"coming_soon_img"+i+"\" data-lazy=\"\" alt=\"123\" >"+
           "<div id=\"coming_soon_hover_info"+i+"\" class=\"coming_soon_hover_info\">"+
             "<div class=\"coming_soon_hover_title\"></div>"+
             "<div class=\"coming_soon_hover_type\"></div>"+

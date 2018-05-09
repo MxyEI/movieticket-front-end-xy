@@ -60,7 +60,7 @@ $(document).ready(function() {
   }
 
   function check_phone_num_valid(phone) {
-    var re = /(13|14|15|18)[0-9]{8}/;
+    var re = /(13|14|15|17|18)[0-9]{8}/;
     return re.test(phone);
   }
 
