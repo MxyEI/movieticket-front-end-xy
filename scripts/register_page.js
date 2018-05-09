@@ -214,7 +214,7 @@ $(document).ready(function() {
   function register_req(phone, sms, pw) {
     // console.log(pw);
     $.post(global_api.register, {phoneNum:phone, password:pw, smsCode:sms}, function(result) {
-      registered();
+      registered(phone,pw);
     }).error(function(err) {
       if (err.responseText.split(',')[0].split(':')[1] == 400) {
         document.getElementById('input_err_hint').innerText = "请设置8位以上数字和字母组合!";
@@ -227,8 +227,10 @@ $(document).ready(function() {
   }
 
   // 注册成功后续动作
-  function registered() {
-    window.location = '../index.html';
+  function registered(phonenum,passw) {
+    alert("注册成功...直接登录");
+    login(phonenum,passw);
+    //window.location = '../index.html';
   }
 // go to register end
 
