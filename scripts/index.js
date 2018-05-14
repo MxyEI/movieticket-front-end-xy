@@ -5,7 +5,7 @@ $(document).ready(function() {
   // 因为各部分代码处于同一个js文件里，因此尽量都创建局部变量，非不得已时避免创建全局变量，这样代码性能也更好
   // 在创建变量或函数时需要加上自己部分的前缀名: head、on_show、coming_soon
   // 例： var head_count = 0; const on_show_name = 'movie'; function coming_soon_find_movie() {}
-  // const global_url = 'http://120.25.76.106';
+  // const global_url = 'http://movie.btorg.org';
   const global_api = {
     head: `${global_url}/resource/movie/popular?count=3`,
     on_show: `${global_url}/resource/movie/on`,
@@ -33,6 +33,7 @@ $(document).ready(function() {
     on_show_add_img(data.count);
 
     var on_show_global_temp = 0, on_show_num = data.count;
+    //console.log(data.count);
     for (var i = 0; i < data.count; i++) {
       $.get(global_api.movie_info+data.data[i], function(data, textStatus) {
         $("#on_show_img"+on_show_global_temp).attr("data-lazy", data.posterSmall);
