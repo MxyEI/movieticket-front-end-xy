@@ -144,6 +144,7 @@ $(document).ready(function() {
     for (let i = 1; i <= select_seat_row_count; i++) {
       let select_seat_number = document.createElement('div');
       select_seat_number.className = 'select_seat_number';
+      //显示行号
       select_seat_number.innerHTML = i;
       select_seat_numbers_fragment.appendChild(select_seat_number);
     }
