@@ -225,8 +225,11 @@ function slick_temp(i) {
     $('.lazy').slick({
       lazyLoad: 'ondemand',
       slidesToShow: 7,
-      slidesToScroll: 1,
-      infinite:false
+      slidesToScroll: 3,
+      infinite:false,
+      touchMove:true,
+        swipe:true,
+        accessibility:true
     });
   }
 });
