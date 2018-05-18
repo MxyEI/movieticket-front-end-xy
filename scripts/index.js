@@ -33,7 +33,7 @@ $(document).ready(function() {
     on_show_add_img(data.count);
 
     var on_show_global_temp = 0, on_show_num = data.count;
-    //console.log(data.count);
+    console.log("data count:"+data.count);
     for (var i = 0; i < data.count; i++) {
       $.get(global_api.movie_info+data.data[i], function(data, textStatus) {
         $("#on_show_img"+on_show_global_temp).attr("data-lazy", data.posterSmall);
@@ -54,10 +54,22 @@ $(document).ready(function() {
     // 添加点击事件，点击进入选择日期、影院、场次页面。
     const on_show_content = $('.content')[0];
     on_show_content.addEventListener('click', function(event) {
-      if (event.target.id.slice(0, event.target.id.length - 1) == 'on_show_button') {
-        const movieId = event.target.className.split('_')[4];
-        window.location = './layouts/select_date_cinema_time.html?movieId=' + movieId + '#select_cinema';
-      }
+      //打印鼠标点击事件，能获取到id和class
+      //console.log(event);
+      //如果电影超过9部则id长度会变为16
+        if(event.target.id.length<16) {
+            if (event.target.id.slice(0, event.target.id.length - 1) == 'on_show_button') {
+                const movieId = event.target.className.split('_')[4];
+                console.log("movieid:" + movieId);
+                window.location = './layouts/select_date_cinema_time.html?movieId=' + movieId + '#select_cinema';
+            }
+        }else{
+            if (event.target.id.slice(0, event.target.id.length - 2) == 'on_show_button') {
+                const movieId = event.target.className.split('_')[4];
+                console.log("movieid:" + movieId);
+                window.location = './layouts/select_date_cinema_time.html?movieId=' + movieId + '#select_cinema';
+            }
+        }
     });
   });
 
@@ -105,8 +117,10 @@ function slick_temp(i) {
     }
   function on_show_add_img(count) {
     var on_show_html = "";
-    for(var i = 0; i < count; i++)
-      on_show_html += slick_temp(i);
+    for(var i = 0; i < count; i++) {
+        //console.log(i)
+        on_show_html += slick_temp(i);
+    }
     $(".on_show").html(on_show_html);
     // 设置hover特效
     on_show_set_hover();
@@ -224,8 +238,8 @@ function slick_temp(i) {
   function slick_func() {
     $('.lazy').slick({
       lazyLoad: 'ondemand',
-      slidesToShow: 7,
-      slidesToScroll: 3,
+      slidesToShow: 6,
+      slidesToScroll: 2,
       infinite:false,
       touchMove:true,
         swipe:true,

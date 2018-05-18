@@ -1,5 +1,10 @@
 import "babel-polyfill";
 
+//退票
+function returnTicket(ticketid) {
+    console.log(ticketid)
+}
+
 $(document).ready(function() {
 	const table = document.getElementById("table_"),
 		drop_button = document.getElementById('drop_button'),
@@ -34,8 +39,8 @@ $(document).ready(function() {
 	var data = {
 		src : '/static/pictures/assets/Account_noRecord_img.png',
 		name : '金刚狼3：殊死一战1',
-		time : '5月3日 20:001',
-		cinema : '金逸珠江国际影城(大学城店)1 ',
+		time : '5月13日 20:001',
+		cinema : '无影院 ',
 		hall : '5号厅1',
 		seats : '5排6座 5排7座 5排8座1',
 		price : '￥98',
@@ -43,6 +48,9 @@ $(document).ready(function() {
 		code : '1234 5678 901'
 	};
 
+
+
+	//登出
 	function drop(phone_num) {
     $.ajax({
       url: global_api.drop,
@@ -77,6 +85,8 @@ $(document).ready(function() {
 		});
 	}
 
+
+
 	(async function init() {
 		/* get history list, movieOnShowId--code, state, seats */
 
@@ -101,6 +111,8 @@ $(document).ready(function() {
 	  //        }
 	  //    ]
 		//  }
+
+
 
 		user_phone.innerHTML = `hello, ${phone_num}`;
 		drop_button.onclick = function() {
@@ -139,6 +151,7 @@ $(document).ready(function() {
 									data.seats = seat_str;
 									data.price = '￥' + movie_info.price;
 									data.code = history.data[i].code;
+									data.ticketId = history.data[i].ticketId;
 
 									if(history.data[i].valid == false) {
 										data.state = '已取票';
@@ -164,6 +177,7 @@ $(document).ready(function() {
 											"<td><div class=\'price\'>"+data.price+"</div></td>"+
 											"<td><div class=\'state_wait\'>"+data.state+"</div>"+
 													"<div class=\'code\'>"+data.code+"</div></td>"+
+                                            "<td><button class=\'state_over\' onclick='returnTicket(1)'>退票</button>"+
 											"</tr></tbody>";
 										table.innerHTML += html_;
 									}
@@ -179,7 +193,6 @@ $(document).ready(function() {
 		   }
 		}
 
-
 		add_tr();
 	})();
 
@@ -189,3 +202,4 @@ $(document).ready(function() {
 	}
 
 });
+
