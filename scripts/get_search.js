@@ -25,7 +25,7 @@ $(document).ready(function() {
                 for(let i=0;i<data.count;i++){
                     var html_ = "<tbody><tr>" +
                         "<td><img class=\'picture\' src=\'"+data.data[i].posterSmall+"\'/></td>"+
-                        "<td><div class=\'movie_name\'>"+data.data[i].title+"</div>"+
+                        "<td><div class=\'movie_name\'><a  href='../layouts/select_date_cinema_time.html?movieId="+data.data[i].movieId+"#select_cinema'/>"+data.data[i].title+"</div>"+
                         "<div class=\'movie_time\'>"+data.data[i].pubDate+"</div></td>"+
                         "</tr></tbody>";
                     searchtable.innerHTML += html_;
