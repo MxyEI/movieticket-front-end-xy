@@ -1,0 +1,104 @@
+#input_container {
+    width: 600px;
+    height: 212px;
+    margin: 20px auto 0 auto;
+}
+
+#item_movie, #item_cinema {
+    color: #999999;
+    font-size: 14px;
+}
+
+/*#movie_container {*/
+    /*width: 240px;*/
+    /*height: 48px;*/
+    /*font-family: Avenir-Book;*/
+    /*font-size: 20px;*/
+    /*color: #484848;*/
+    /*letter-spacing: 1px;*/
+    /*border: 1px solid #ECE7E7;*/
+    /*border-radius: 2px;*/
+    /*position: relative;*/
+
+    /*margin-bottom: 15px;*/
+    /*margin-top: 3px;*/
+/*}*/
+
+
+/*#movie_input {*/
+    /*border: none;*/
+    /*width: 147px;*/
+    /*height: 27px;*/
+    /*margin-top: 8px;*/
+    /*margin-bottom: 9px;*/
+    /*margin-right: 26px;*/
+    /*font-size: 20px;*/
+    /*position: absolute;*/
+    /*left:64px;*/
+    /*padding: 3px;*/
+/*}*/
+
+
+#cinema_input,#movie_input{
+    margin-top: 3px;
+    margin-bottom: 24px;
+    border: 1px solid grey;
+    width: 70%;
+    height: 13%;
+    vertical-align: center;
+    text-align: center;
+    font-family: Avenir-Book;
+    font-size: 20px;
+    color: #484848;
+    letter-spacing: 1px;
+    border: 1px solid #ECE7E7;
+    border-radius: 2px;
+
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-top: 14px;
+}
+
+#search_movie, #search_cinema {
+    width: 108px;
+    height: 48px;
+    margin-top: 6px;
+    border: 1px solid #E84A3A;
+    border-radius: 2px;
+    background: none;
+
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #E84A3A;
+}
+
+#search_cinema {
+    float: right;
+}
+
+#search_movie {
+    float: right;
+}
+
+#search_movie:hover, #search_cinema:hover {
+    background: #E84A3A;
+    color: white;
+}
+
+
+.item_box {
+    margin-bottom: 24px;
+}
+
+.movie_name, .movie_time, .cinema_hall{
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    height: 20px;
+}
+
+.picture {
+    margin: 20px;
+    width: 48px;
+    height: 66px;
+}

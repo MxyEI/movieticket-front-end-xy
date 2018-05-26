@@ -65,6 +65,7 @@ html, body {
   display: inline-block;
 }
 
+#head_get_search,
 #head_get_ticket,
 #head_user {
   display: inline-block;
@@ -73,6 +74,11 @@ html, body {
   font-size: 16px;
   position: relative;
   z-index: 2;
+}
+
+#head_get_search {
+  cursor: pointer;
+  margin: 26px 56px 0 0;
 }
 
 #head_get_ticket {

@@ -1,0 +1,27 @@
+extends ../layout
+
+block links
+    link(rel="stylesheet" href="/styles/get_search.css")
+
+block content
+    include head_bar.jade
+    div#input_container
+
+        div#item_movie 搜索电影
+            div#movie_container
+                input#movie_input(type="text")
+                button#search_movie 搜电影
+
+        div#item_cinema 搜索影院
+            div#cinema_container
+                input#cinema_input(type='text')
+                button#search_cinema 搜影院
+
+    hr
+    table.table#searchtable
+
+
+block scripts
+    script(type="text/javascript" src="/scripts/jquery-1.11.0.min.js")
+    script(type="text/javascript" src="/scripts/get_search.js")
+    //script(type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js")

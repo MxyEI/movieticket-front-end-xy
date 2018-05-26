@@ -56,4 +56,12 @@ $(document).ready(function() {
 			window.location = '/layouts/get_ticket.html';
 		}
 	}
+
+    /*点击首页搜索按钮进入搜索页面*/
+    let head_get_search = document.getElementById('head_get_search');
+    if (head_get_search !== null) {
+        head_get_search.onclick = function() {
+            window.location = '/layouts/get_search.html';
+        }
+    }
 });
