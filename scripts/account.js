@@ -1,10 +1,5 @@
 import "babel-polyfill";
 
-//退票
-function returnTicket(ticketid) {
-    console.log(ticketid)
-}
-
 $(document).ready(function() {
 	const table = document.getElementById("table_"),
 		drop_button = document.getElementById('drop_button'),
@@ -29,6 +24,8 @@ $(document).ready(function() {
   	// (get)用movieId获取电影名，小尺寸海报的URL
   	movie_info: `${global_url}/resource/movie/`,
 
+		//（post）退票
+		return_Ticket: `${global_url}/resource/ticket/returnTicket/`,
 		// 登出
 		drop: `${global_url}/resource/session/drop`,
 	}
@@ -177,7 +174,7 @@ $(document).ready(function() {
 											"<td><div class=\'price\'>"+data.price+"</div></td>"+
 											"<td><div class=\'state_wait\'>"+data.state+"</div>"+
 													"<div class=\'code\'>"+data.code+"</div></td>"+
-                                            "<td><button class=\'state_over\' onclick='returnTicket(1)'>退票</button>"+
+                                            "<td><button id='"+data.ticketId+"' class=\'state_over\'>退票</button>"+
 											"</tr></tbody>";
 										table.innerHTML += html_;
 									}
@@ -200,6 +197,33 @@ $(document).ready(function() {
 
 
 	}
+
+    //退票
+    function returnTicket(ticketid) {
+        $.ajax({
+            url: global_api.return_Ticket,
+            type: "post",
+            data:{
+                "ticketId":ticketid
+            },
+            xhrFields: {
+                withCredentials: true
+            },
+            success: function(data) {
+                alert("退票成功");
+                location.reload();
+            },
+        });
+    }
+
+    // 添加点击事件，点击进入退票。
+    const _content = document.getElementById('table_');
+    _content.addEventListener('click', function(event) {
+        //打印鼠标点击事件，能获取到id和class
+        //console.log(event);
+        //如果电影超过9部则id长度会变为16
+        returnTicket(event.target.id);
+    });
 
 });
 
