@@ -221,8 +221,10 @@ $(document).ready(function() {
     _content.addEventListener('click', function(event) {
         //打印鼠标点击事件，能获取到id和class
         //console.log(event);
-        //如果电影超过9部则id长度会变为16
-        returnTicket(event.target.id);
+		if(event.target.className=='state_over'){
+            returnTicket(event.target.id);
+		}
+
     });
 
 });
